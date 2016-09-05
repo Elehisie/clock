@@ -44,7 +44,6 @@ var drawHourHand = function(hour) {
   ctx.lineWidth = 5;
   ctx.beginPath();
   ctx. moveTo(cx,cy);
-//  ctx.lineTo(cx+r*Math.cos(hours[hour]),cy+r*(-Math.sin(hours[hour])));
   ctx.lineTo(cx+r*0.6*Math.cos(hour),cy+r*0.6*(-Math.sin(hour)));
   ctx.stroke();
 }
@@ -53,7 +52,6 @@ var drawMinuteHand = function(minute) {
   ctx.lineWidth = 3;
   ctx.beginPath();
   ctx. moveTo(cx,cy);
-//  ctx.lineTo(cx+r*Math.cos(minute),cy+r*(-Math.sin(minute)));
   ctx.lineTo(cx+r*0.85*Math.cos(minute),cy+r*0.85*(-Math.sin(minute)));
   ctx.stroke();
 }
